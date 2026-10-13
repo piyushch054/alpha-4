@@ -1,0 +1,34 @@
+.nfac-toolbar{display:flex;flex-wrap:wrap;gap:10px;align-items:flex-end}
+.nfac-toolbar label{display:flex;flex-direction:column;gap:4px;font-size:12px;font-weight:600}
+.nfac-toolbar select,.nfac-toolbar input{height:38px;min-width:200px}
+.nfac-tabs{display:flex;gap:4px;margin:14px 0;border-bottom:1px solid var(--border,#e5e7eb);flex-wrap:wrap}
+.nfac-tabs button{background:none;border:0;padding:9px 14px;font-weight:600;cursor:pointer;border-bottom:2px solid transparent;color:inherit}
+.nfac-tabs button.active{border-bottom-color:var(--primary,#c8102e);color:var(--primary,#c8102e)}
+.nfac-warn{background:#fff7e6;border:1px solid #f5c26b;border-radius:10px;padding:8px 12px;margin-bottom:12px;font-size:13px}
+.nfac-warn p{margin:3px 0}
+.nfac-layout{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:16px}
+@media(max-width:900px){.nfac-layout{grid-template-columns:1fr}}
+.nfac-group{border:1px solid var(--border,#e5e7eb);border-radius:10px;margin-bottom:10px;overflow:hidden}
+.nfac-group summary{display:flex;align-items:center;gap:10px;padding:10px 12px;background:rgba(0,0,0,.025);cursor:pointer}
+.nfac-group summary label{flex:1;display:flex;gap:8px;align-items:center}
+.nfac-group summary .ghost-btn{padding:4px 10px;font-size:12px}
+.nfac-row{display:flex;gap:10px;align-items:flex-start;padding:8px 14px;border-top:1px solid rgba(0,0,0,.05);font-size:13px;cursor:pointer}
+.nfac-row small{display:block;color:#6b7280;font-size:11px}
+.nfac-actions{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));border:1px solid var(--border,#e5e7eb);border-radius:10px}
+.nfac-bulk{display:flex;gap:8px;margin-top:12px;flex-wrap:wrap}
+.nfac-scope h4{margin:12px 0 4px}
+.nfac-summary{border:1px solid var(--border,#e5e7eb);border-radius:10px;padding:12px;font-size:13px;align-self:start;position:sticky;top:12px}
+.nfac-summary h4{margin:0 0 8px}
+.nfac-diff td{background:#fff4f4}
+.kd-kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px;margin-bottom:14px}
+.kd-kpis .workflow-card{padding:14px}.kd-kpis span{display:block;font-size:12px;color:#6b7280}.kd-kpis b{font-size:24px}
+.kd-filters{display:flex;flex-wrap:wrap;gap:8px;align-items:flex-end;margin-bottom:12px}
+.kd-filters input,.kd-filters select{height:38px}.kd-filters #kdQ{flex:1 1 320px}
+.kd-filters label{display:flex;flex-direction:column;font-size:11px;gap:2px}
+.kd-sub{display:block;color:#6b7280;font-size:11px}.kd-act{white-space:nowrap}.kd-act .more-btn{margin-right:4px}
+.kd-pager{display:flex;gap:8px;align-items:center;justify-content:flex-end;margin-top:10px}
+.kd-h{margin:14px 0 6px}.kd-summary{display:flex;flex-wrap:wrap;gap:10px}
+.kd-filters select,.kd-filters input[type=date]{width:auto!important;flex:1 1 150px;min-width:140px}
+.kd-filters #kdQ{width:100%!important;flex:1 1 100%}
+.kd-files{display:grid;gap:6px;margin:8px 0}.kd-files>div{display:flex;justify-content:space-between;align-items:center;border:1px solid #e5e7eb;border-radius:8px;padding:6px 10px;font-size:13px}
+.kd-upload{display:flex;gap:8px;align-items:center;font-size:13px;font-weight:600;margin:8px 0}

@@ -1,0 +1,162 @@
+.nf-journey-list{list-style:none;margin:12px 0;padding:0;display:grid;gap:0}
+.nf-journey-list li{display:grid;grid-template-columns:18px 1fr;gap:12px;position:relative;padding-bottom:14px}
+.nf-journey-list li:not(:last-child)::before{content:"";position:absolute;left:8px;top:16px;bottom:0;width:2px;background:var(--shell-line,#e2e8f0)}
+.nf-journey-list i{width:16px;height:16px;border-radius:50%;background:var(--shell-red,#c8102e);box-shadow:0 0 0 3px rgba(200,16,46,.15);margin-top:2px}
+.nf-journey-list b{font-size:13px}.nf-journey-list p{margin:2px 0;font-size:12.5px;line-height:1.5}
+.nf-journey-list span{font-size:11px;opacity:.65}
+.nf-noc{white-space:pre-wrap;font-family:inherit;font-size:13px;line-height:1.6;margin:0}
+.nf-journey-step{cursor:pointer;border-radius:8px;padding:2px 6px;margin:-2px -6px}.nf-journey-step:hover,.nf-journey-step:focus-visible{background:var(--shell-soft,#f1f5f9);outline:none}
+.nf-showcase{margin-bottom:16px}
+
+.los-application{display:flex;flex-direction:column;gap:0}
+.los-application .los-top{display:grid;grid-template-columns:minmax(250px,280px) minmax(0,1fr) auto;align-items:start;gap:12px}
+.los-application .los-page-title h2{margin:0;color:var(--shell-ink,#1f2937);font:700 21px/1.3 var(--shell-display,system-ui)}
+.los-application .los-page-title p{margin:5px 0 0;color:var(--shell-subtle,#64748b);font:400 10px/1.5 var(--shell-font,system-ui);white-space:nowrap}
+.los-application .los-draft-badge{margin-top:11px;padding:4px 8px;background:#fff0f0;color:#b42332;font:700 9px var(--shell-font,system-ui)}
+.los-application .los-stepper{min-width:0;padding-top:5px;overflow:hidden}
+.los-application .los-stepper ol{position:relative;display:flex;align-items:flex-start;list-style:none;margin:0;padding:0}
+.los-application .los-stepper ol::before{position:absolute;content:"";height:2px;left:6.25%;right:6.25%;top:9px;background:#dfe4eb}
+.los-application .los-stepper li{position:relative;z-index:1;flex:1;min-width:0;text-align:center}
+.los-application .los-stepper button{display:flex;flex-direction:column;align-items:center;gap:5px;width:100%;min-width:0;padding:0 2px;border:0;background:transparent;color:#64748b}
+.los-application .los-stepper button:disabled{cursor:default}
+.los-application .los-step-number{display:grid;place-items:center;width:18px;height:18px;border-radius:50%;background:#e2e7ed;color:#687587;font:700 9px var(--shell-font,system-ui)}
+.los-application .los-step-label{display:block;max-width:100%;overflow:hidden;color:#667085;font:600 7px/1.25 var(--shell-font,system-ui);text-overflow:ellipsis;white-space:nowrap}
+.los-application .los-stepper li.active .los-step-number,.los-application .los-stepper li.done .los-step-number{background:#cf1f2e;color:#fff}
+.los-application .los-stepper li.active .los-step-label{color:#b51928}
+.los-application .wizard-main{display:flex;flex-direction:column;min-width:0;margin-top:12px;padding:0;border:0;border-radius:0;background:transparent;box-shadow:none!important}
+.los-application .los-section-title{align-items:flex-start;margin:0 0 16px}
+.los-application .los-section-title h3{margin:0;color:#172033;font:700 14px/1.4 var(--shell-display,system-ui)}
+.los-application .los-section-title p{margin:4px 0 0;color:#758195;font:400 9px/1.65 var(--shell-font,system-ui)}
+.los-application .los-section-title .badge{margin-top:2px;padding:4px 7px;background:#f0f2f5;color:#526072;font:700 8px var(--shell-font,system-ui)}
+.los-application .los-product-grid{grid-template-columns:repeat(5,minmax(0,1fr));gap:12px;margin:0}
+.los-application .los-product-grid .product-select[data-product-visual]{border:1px solid #e2e6ec;border-radius:7px;box-shadow:none!important;transform:none}
+.los-application .los-product-grid .product-select[data-product-visual].selected{border:2px solid #c92332;box-shadow:0 2px 7px rgba(31,41,55,.1)!important;background:#fff}
+.los-application .los-product-grid .nf-product-photo{aspect-ratio:1.48}
+.los-application .los-product-grid .nf-product-choice{top:10px;right:10px;width:23px;height:23px}
+.los-application .los-product-grid .product-select:not(.selected) .nf-product-choice{display:none}
+.los-application .los-product-grid .product-select[data-product-visual] .nf-product-copy{display:block;min-height:52px;padding:7px 8px 8px;border-top:0}
+.los-application .los-product-grid .product-select[data-product-visual] b{display:block;color:#202a3a;font:700 12px/1.3 var(--shell-font,system-ui)}
+.los-application .los-product-grid .product-select[data-product-visual] .nf-product-copy>span{display:block;margin-top:4px;color:#8791a0;font:400 8px/1.4 var(--shell-font,system-ui)}
+.los-application .field-grid.three{grid-template-columns:repeat(3,minmax(0,1fr));gap:11px 24px}
+.los-application .field-grid>.field{gap:6px;line-height:1.35}
+.los-application .field-grid>.field>span{min-height:0;margin:0;line-height:1.35}
+.los-application .field{min-width:0;margin:0;color:#374151;font:600 9px/1.35 var(--shell-font,system-ui)}
+.los-application .field>span{margin-bottom:5px;font:600 9px/1.35 var(--shell-font,system-ui)}
+.los-application .field-grid>.field>input,.los-application .field-grid>.field>select{height:34px;min-height:34px;min-width:0;padding:0 10px;border:1px solid #e0e5eb;border-radius:5px;background:#fff;color:#253044;font:500 9px var(--shell-font,system-ui);line-height:1.2;box-shadow:none}
+.los-application .field-grid>.field>input:focus,.los-application .field-grid>.field>select:focus{border-color:#9aa6b6;box-shadow:0 0 0 2px rgba(100,116,139,.1)}
+.los-application .field-grid>.field>input[readonly],.los-application .field-grid>.field>input:disabled{border-color:#e1e5eb;background:#f0f1f3;color:#8992a0;opacity:1}
+.los-application .field small{margin-top:7px;color:#98a2b1;font:400 8px/1.4 var(--shell-font,system-ui)}
+.los-application .field .required{color:#c92332}
+.los-application .los-actions{justify-content:space-between;margin-top:12px;padding-top:12px;border-top:1px solid #e5e8ed}
+.los-application .los-actions .ghost-btn{min-height:31px;padding:0 13px;border:1px solid #e0e5eb;border-radius:5px!important;background:#fff;color:#344054;font:600 9px var(--shell-font,system-ui)}
+.los-application .los-actions .primary-btn{min-height:31px;padding:0 18px;border:0;border-radius:5px!important;background:linear-gradient(105deg,#c91e32 0%,#4458d8 100%);color:#fff;font:700 9px var(--shell-font,system-ui);box-shadow:none}
+.los-application .los-actions .ghost-btn:focus-visible,.los-application .los-actions .primary-btn:focus-visible,.los-application .los-stepper button:focus-visible{outline:2px solid #3659cf;outline-offset:3px}
+@media(max-width:1120px){
+  .los-application .los-top{grid-template-columns:minmax(240px,1fr) auto;position:relative;row-gap:14px}
+  .los-application .los-stepper{grid-column:1/-1;grid-row:2}
+  .los-application .los-draft-badge{grid-column:2;grid-row:1}
+  .los-application .los-step-label{font-size:9px}
+  .los-application .los-product-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+}
+@media(max-width:760px){
+  .app-shell:has(.los-application){overflow-x:clip}
+  .los-application{min-height:calc(100vh - 96px)}
+  .los-application .los-top{grid-template-columns:minmax(0,1fr) auto;gap:14px}
+  .los-application .los-page-title h2{font-size:19px}
+  .los-application .los-page-title p{white-space:normal}
+  .los-application .los-stepper{overflow-x:auto;padding:4px 0 8px;scrollbar-width:thin}
+  .los-application .los-stepper ol{min-width:680px}
+  .los-application .los-step-label{font-size:9px}
+  .los-application .wizard-main{margin-top:20px}
+  .los-application .los-description-break{display:none}
+  .los-application .field-grid.three{grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+  .los-application .los-product-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+  .los-application .los-product-grid .nf-product-photo{aspect-ratio:1.5}
+}
+@media(max-width:480px){
+  .los-application .los-product-grid{grid-template-columns:1fr}
+  .los-application .los-product-grid .product-select[data-product-visual]{grid-template-columns:112px minmax(0,1fr);min-height:104px}
+  .los-application .los-product-grid .nf-product-photo{height:100%;min-height:104px;aspect-ratio:auto}
+  .los-application .los-product-grid .product-select[data-product-visual] .nf-product-copy{display:flex;min-height:104px;flex-direction:column;justify-content:center;padding:10px 12px;border-left:0}
+  .los-application .field-grid.three{grid-template-columns:1fr}
+  .los-application .los-actions .ghost-btn,.los-application .los-actions .primary-btn{min-height:40px}
+}
+
+.los-application .los-selection-error{min-height:0;color:#b42332;font:600 9px var(--shell-font,system-ui)}
+.los-application .los-selection-error:not(:empty){padding:8px 0 0}
+.los-application .los-preview-panels{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;margin-top:16px}
+.los-application .los-preview-panel{min-width:0;padding:16px 18px 14px;border:1px solid #edf0f4;border-radius:10px;background:#fff;box-shadow:0 8px 22px rgba(31,41,55,.035)!important}
+.los-application .los-panel-heading{display:flex;align-items:center;gap:11px;margin-bottom:16px}
+.los-application .los-panel-icon{display:grid;place-items:center;flex:0 0 30px;width:30px;height:30px;border-radius:50%;background:#edf4ff;color:#3972e8;font:700 15px var(--shell-font,system-ui)}
+.los-application .los-panel-heading h3{margin:0;color:#1c2b43;font:700 15px/1.35 var(--shell-display,system-ui)}
+.los-application .los-panel-heading p{margin:3px 0 0;color:#8a96a8;font:400 9px/1.4 var(--shell-font,system-ui)}
+.los-application .los-table-wrap{width:100%;max-width:100%;overflow-x:auto;scrollbar-width:thin}
+.los-application .los-preview-table{min-width:450px;color:#354258;font:400 8px/1.35 var(--shell-font,system-ui)}
+.los-application .los-preview-row{display:grid;grid-template-columns:minmax(88px,1.15fr) minmax(100px,1.3fr) minmax(72px,.9fr) minmax(76px,.9fr) minmax(77px,.9fr);align-items:center;min-height:36px;border-bottom:1px solid #f0f2f5}
+.los-application .los-preview-row>span{min-width:0;padding:5px 8px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.los-application .los-preview-row.los-preview-head{min-height:29px;border:0;border-radius:6px;background:#f5f7fa;color:#8390a2;font-size:7px;font-weight:800;text-transform:uppercase}
+.los-application .los-preview-row.los-preview-head>span{padding-top:6px;padding-bottom:6px}
+.los-application .los-record-link{max-width:100%;padding:0;border:0;background:transparent;color:#2e3b50;font:700 8px var(--shell-font,system-ui);text-align:left;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;cursor:pointer}
+.los-application .los-record-link:hover,.los-application .los-panel-link:hover{color:#3268df}
+.los-application .los-customer-cell{display:flex;align-items:center;gap:6px}
+.los-application .los-customer-cell i{display:grid;place-items:center;flex:0 0 21px;width:21px;height:21px;border-radius:50%;background:#eef3fb;color:#6481b3;font:700 7px var(--shell-font,system-ui);font-style:normal}
+.los-application .los-status{display:inline-block;max-width:100%;padding:5px 8px;border-radius:14px;background:#eaf1ff;color:#4773c2;font:700 7px var(--shell-font,system-ui);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.los-application .los-status-converted,.los-application .los-status-active-loan{background:#e1f7ec;color:#34956b}
+.los-application .los-status-opportunity,.los-application .los-status-sales-predeal{background:#f1eaff;color:#825ac2}
+.los-application .los-status-follow-up,.los-application .los-status-cam-allocation,.los-application .los-status-cam-sheet{background:#eaf1ff;color:#4773c2}
+.los-application .los-status-credit-review{background:#e9f2ff;color:#3977c9}
+.los-application .los-status-disbursement{background:#fff5df;color:#b17c17}
+.los-application .los-application-row{cursor:pointer;outline:none}
+.los-application .los-application-row:hover{background:#f8faff}
+.los-application .los-application-row:focus-visible{box-shadow:inset 0 0 0 2px #6e91ee}
+.los-application .los-application-row.selected{background:#eff4ff;box-shadow:inset 3px 0 #4773df}
+.los-application .los-empty{padding:14px 8px!important;color:#8995a6!important;text-align:center}
+.los-application .los-panel-link{display:inline-block;margin-top:8px;color:#4275dc;font:700 9px var(--shell-font,system-ui);text-decoration:none}
+.los-application .los-selected-summary{margin-top:8px;padding:8px 9px;border-radius:5px;background:#f2f6ff;color:#3d527e;font:600 8px/1.5 var(--shell-font,system-ui)}
+.los-application .los-selected-summary span{color:#667792;font-weight:500}
+.los-selected-case{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px;margin:0 0 16px;padding:12px;border:1px solid #dfe7f4;border-radius:8px;background:#f7f9fc}
+.los-selected-case>div{min-width:0}
+.los-selected-case b,.los-selected-case strong{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.los-selected-case b{margin-bottom:4px;color:#758195;font:600 8px var(--shell-font,system-ui)}
+.los-selected-case strong{color:#25334a;font:700 9px var(--shell-font,system-ui)}
+.los-application .los-data-area{min-width:0;margin-top:10px}
+.los-application .los-filter-toolbar{display:flex;align-items:center;flex-wrap:wrap;gap:7px;margin:0 0 12px;padding:0}
+.los-application .los-search-control{flex:1 1 220px;min-width:180px}
+.los-application .los-search-control input,.los-application .los-filter-control select{width:100%;height:34px;min-width:0;padding:0 11px;border:1px solid #dce2eb;border-radius:6px;background:#fff;color:#263349;font:500 11px var(--shell-font,system-ui);outline:none}
+.los-application .los-search-control input:focus,.los-application .los-filter-control select:focus{border-color:#8ca0c0;box-shadow:0 0 0 2px rgba(71,115,223,.12)}
+.los-application .los-filter-control{flex:0 1 145px;min-width:115px}
+.los-application .los-column-control{flex-basis:172px}
+.los-application .los-tool-btn{min-height:32px;padding:0 10px;border:1px solid #dce2eb;border-radius:6px;background:#fff;color:#344054;font:500 10px var(--shell-font,system-ui);white-space:nowrap;cursor:pointer;transition:background .15s,border-color .15s,color .15s}
+.los-application .los-tool-btn:hover{border-color:#aab6c8;background:#f7f9fc;color:#20304a}
+.los-application .los-tool-btn:focus-visible,.los-application .los-page-btn:focus-visible,.los-application .los-page-size select:focus-visible{outline:2px solid #547bd0;outline-offset:2px}
+.los-application .los-export-actions{display:flex;flex-wrap:wrap;gap:6px}
+.los-application .los-visually-hidden{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.los-application .los-pagination{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:7px;margin-top:9px;padding-top:9px;border-top:1px solid #edf0f4;color:#687589;font:400 8px var(--shell-font,system-ui)}
+.los-application .los-page-controls{display:flex;align-items:center;gap:3px}
+.los-application .los-page-btn{display:grid;place-items:center;min-width:24px;height:24px;padding:0 5px;border:1px solid #e0e5ed;border-radius:5px;background:#fff;color:#48566b;font:600 9px var(--shell-font,system-ui);cursor:pointer}
+.los-application .los-page-btn:hover:not(:disabled){border-color:#a9b8d2;background:#f5f7fb}
+.los-application .los-page-btn.active{border-color:#bd2534;background:#c92332;color:#fff}
+.los-application .los-page-btn:disabled{color:#aab2bf;background:#f7f8fa;cursor:not-allowed}
+.los-application .los-page-size{display:flex;align-items:center;gap:5px;white-space:nowrap}
+.los-application .los-page-size select{height:25px;padding:0 20px 0 7px;border:1px solid #dce2eb;border-radius:5px;background:#fff;color:#344054;font:500 9px var(--shell-font,system-ui)}
+.los-application .los-application-row.selected{position:relative;background:#dce7f6;box-shadow:inset 4px 0 #b51f30,inset 0 1px #bdcbe0,inset 0 -1px #bdcbe0}
+.los-application .los-application-row.selected>span{color:#1d2d48;font-weight:600}
+.los-application .los-application-row.selected .los-record-link{color:#172a49}
+.los-application .los-application-row.selected .los-customer-cell i{background:#c7d7ee;color:#243c67}
+@media(max-width:760px){
+  .los-application .los-preview-panels{grid-template-columns:1fr;gap:14px}
+  .los-application .los-preview-panel{padding:14px 12px}
+  .los-application .los-preview-table{min-width:500px}
+  .los-selected-case{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .los-application .los-filter-toolbar{align-items:stretch}
+  .los-application .los-search-control{flex:1 1 100%}
+  .los-application .los-filter-control{flex:1 1 145px}
+}
+@media(max-width:480px){
+  .los-application .los-filter-toolbar{gap:6px}
+  .los-application .los-search-control,.los-application .los-filter-control,.los-application .los-column-control{flex:1 1 100%}
+  .los-application .los-export-actions{flex:1 1 100%}
+  .los-application .los-pagination{justify-content:flex-start}
+  .los-application .los-page-summary{flex:1 1 100%}
+  .los-application .los-page-size{margin-left:auto}
+}

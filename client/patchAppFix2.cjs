@@ -1,0 +1,1 @@
+const fs = require("fs"); let c = fs.readFileSync("public/workflow/app.js", "utf8"); c = c.replace(/data-kpi=".*?" onclick="window\\.openCeoKpiModal\\(.*?\\)"/g, "data-kpi=\"${k.id}\" onclick=\"window.openCeoKpiModal(${i})\""); fs.writeFileSync("public/workflow/app.js", c);

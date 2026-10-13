@@ -1,0 +1,5 @@
+.nf-kpi-tooltip{position:fixed;z-index:10000;pointer-events:none;width:max-content;max-width:min(280px,calc(100vw - 24px));padding:12px 14px;background:var(--surface);color:var(--text);border:1px solid var(--line);border-radius:8px;box-shadow:0 8px 24px color-mix(in srgb,var(--text) 14%,transparent);font:500 12px var(--shell-font);line-height:1.6;white-space:pre-line;letter-spacing:0}
+.nf-kpi-tooltip[hidden]{display:none}
+.nf-kpi-hit{fill:transparent;stroke:none;pointer-events:all;cursor:crosshair}
+.nf-kpi-hit:focus{outline:none;fill:color-mix(in srgb,var(--blue) 8%,transparent)}
+.nf-kpi-hit:hover{fill:color-mix(in srgb,var(--blue) 5%,transparent)}

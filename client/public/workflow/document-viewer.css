@@ -1,0 +1,17 @@
+.nf-doc-controls{display:grid;grid-template-columns:minmax(260px,2fr) minmax(180px,1fr) minmax(180px,1fr);gap:16px;margin:20px 0 12px}
+.nf-doc-controls label{display:flex;flex-direction:column;gap:6px;min-width:0;color:var(--shell-subtle);font:600 12px var(--shell-font)}
+.nf-doc-controls input,.nf-doc-controls select{width:100%;min-width:0;height:44px;margin:0;border:1px solid var(--shell-line);border-radius:6px;padding:0 12px;background:var(--surface);color:var(--shell-ink);font:400 14px var(--shell-font)}
+.nf-doc-info{color:var(--shell-subtle);font-size:13px;line-height:1.6;margin-bottom:16px}
+.nf-doc-view{min-width:88px;white-space:nowrap}.nf-doc-view:disabled{opacity:.5;cursor:not-allowed}
+.nf-doc-dialog{width:min(960px,100%)!important;max-width:960px!important;border-radius:8px!important;box-sizing:border-box}
+.nf-doc-context{display:flex;flex-direction:column;gap:8px;overflow-wrap:anywhere;color:var(--shell-ink)}
+.nf-doc-context span,.nf-doc-file-meta span{font-size:13px;color:var(--shell-subtle)}
+.nf-doc-tabs,.nf-doc-upload{display:flex;gap:10px;flex-wrap:wrap;margin:16px 0}
+.nf-doc-tabs button[aria-pressed=true]{border-color:var(--blue);background:var(--shell-quick);color:var(--blue)}
+.nf-doc-preview{min-height:260px;background:var(--shell-canvas);border:1px solid var(--shell-line);border-radius:6px;overflow:hidden}
+.nf-doc-preview img{display:block;width:100%;height:420px;max-height:50vh;object-fit:contain}.nf-doc-preview iframe{display:block;border:0;width:100%;height:480px;max-height:55vh;background:var(--surface)}
+.nf-doc-file-meta{display:flex;align-items:center;gap:12px;flex-wrap:wrap;padding:14px;background:var(--surface);border-bottom:1px solid var(--shell-line);overflow-wrap:anywhere}.nf-doc-file-meta b{min-width:0;flex:1}.nf-doc-file-meta a{text-decoration:none}
+.nf-doc-upload .upload-btn{position:relative;overflow:hidden;cursor:pointer}.nf-doc-upload input{position:absolute;inset:0;opacity:0;width:100%;height:100%;cursor:pointer}
+.nf-doc-dialog .modal-body{overflow:auto;max-height:72vh}.nf-doc-dialog .modal-footer{flex-wrap:wrap}
+@media(max-width:900px){.nf-doc-controls{grid-template-columns:1fr 1fr}.nf-doc-controls label:first-child{grid-column:1/-1}}
+@media(max-width:480px){.nf-doc-controls{grid-template-columns:1fr}.nf-doc-controls label:first-child{grid-column:auto}.nf-doc-preview img{height:300px}.nf-doc-file-meta{align-items:flex-start}.nf-doc-file-meta b{flex-basis:100%}}
